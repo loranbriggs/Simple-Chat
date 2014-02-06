@@ -3,13 +3,23 @@
 *Prerequisits:*
 
 1. [Node](http://nodejs.org/) and NPM
-1. Express installed globally
+
+## Quick Start
+
+    git clone https://github.com/loranbriggs/Simple-Chat.git
+    cd Simple-Chat
+    npm install
+    node app.js
+
+## Build from Scratch
+
+### Creating the project
+We will be using Node, with Express as our server side framework. To use the
+Express generator you have to install Express globally:
 
     npm install -g express
 
-## Creating the project
-We will be using Node with Express as our server side framework. If express is
-installed globally run:
+Once installed globablly we can generate an application:
 
     express --ejs SimpleChat
 
@@ -47,6 +57,10 @@ Open the `package.json` with a text editor and add `sockjs` as a dependency.
         "ejs": "*"
       }
     }
+
+Instead of manually altering `package.json` you could also run:
+
+    npm install sockjs --save
 
 Now from withing the `SimpleChat` directory run:
 
